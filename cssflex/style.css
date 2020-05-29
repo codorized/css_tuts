@@ -1,0 +1,64 @@
+/*CSS GRID*/
+
+.header { 
+	grid-area: header; 
+	background-color: lightblue; 
+}
+ 
+.sidebar { 
+	grid-area: sidebar; 
+	background-color: lightgreen;
+	height: auto;
+}
+
+.body { 
+	grid-area: body; 
+	background-color: lightpink;	
+	height: auto;
+}
+
+.body-flex
+{
+	display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.body-grid
+{
+	display: grid;
+	grid-template-rows: auto;
+	height: auto;
+}
+
+
+.footer { 
+	grid-area: footer; 
+	background-color: lightcyan;
+}
+
+div 
+{
+	height: 100px;
+}
+
+.main-content
+{
+	display: grid;
+	grid-template-areas:
+    'header header header header header header'
+    'sidebar sidebar body body body body'
+    'footer footer footer footer footer footer';
+    /*grid-gap: 10px;*/
+}
+
+@media only screen and (max-width: 600px) {
+  .main-content {
+    grid-template-areas:
+    'header header header header header header'
+    'sidebar sidebar sidebar sidebar sidebar sidebar'
+    'body body body body body body'
+    'footer footer footer footer footer footer';
+  }
+}
+
