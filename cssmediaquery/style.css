@@ -1,0 +1,157 @@
+body
+{
+	margin: 0;
+}
+
+.main-content
+{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.content-item
+{
+	width: 300px;
+    height: 300px;
+    background: lightblue;
+    margin: 10px;
+}
+
+
+
+.news-content
+{
+	display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.main-item
+{
+	height: auto;
+    width: 800px;
+    background: lightcoral;
+    margin-right: 10px;
+}
+
+.sub-items .sub-item
+{
+    height: 200px;
+    width: 300px;
+    background: lightcoral;
+    margin-bottom: 10px;
+}
+
+.sub-items .sub-item:last-child
+{
+    margin-bottom: 0;
+}
+
+.card-content
+{
+    height: 300px;
+    background: lightgreen;
+
+}
+
+.card-items
+{
+    display: flex;
+    justify-content: center;
+    margin-top: -162px;
+}
+
+.card-items .card-item
+{
+	height: 300px;
+    width: 300px;	
+    background: #4cc04c;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 665px) {
+
+	.main-content
+	{
+	    flex-wrap: wrap;	
+	}
+
+	.main-content .content-item
+	{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+    
+    .news-content
+    {
+    	flex-wrap: wrap;
+    }
+
+    .news-content .main-item
+    {
+	    margin-bottom: 10px;
+	    margin-right: 0px;
+	    height: 400px;
+	    width: 100%;
+    }
+
+    .news-content .sub-items
+    {
+	    width: 100%;
+    }
+
+    .sub-items .sub-item
+    {
+	    width: 100%;
+    }
+
+    .card-items
+    {
+    	flex-wrap: wrap;
+    }
+
+    .card-items .card-item
+	{
+	    width: 46%;
+	}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	.main-content
+	{
+		flex-wrap: wrap;
+	}
+	.content-item
+	{
+		width: 47%;
+	}
+
+	.main-item{
+		width: 50%;
+	}
+
+	.sub-items
+	{
+		width: 50%;
+	}
+
+	.sub-items .sub-item
+	{
+		width: 100%;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
