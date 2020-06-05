@@ -1,0 +1,46 @@
+CSS Manual 
+Common properties and their uses:
+
+> display: flex
+allows you to enable the css flex technology
+Example: 
+.parent
+{
+  display: flex;
+} 
+
+> flex-direction: row/column
+a flex property which sets the direct child elements in a row or column orientation. If not specified, the default value is row
+Example: 
+.parent
+{
+  display: flex;
+  flex-direction: row
+} 
+
+Demo: 
+Initial: 
+0
+0
+0
+
+Applied:
+0 0 0 0
+
+> align-items: flex-start/flex-end/center/*baseline/*stretch
+defines the default behavior for how items are laid out along the cross axis
+*not commonly used
+NOTE: If the child elements are in horizontal flow(flex-direction: row), align-items will change the orientation vertically and vice versa.
+NOTE: this is applied on the parent element
+
+> justify-content: flex-start/flex-end/center/*baseline/*stretch
+same with align items but does the opposite
+*no commonly used
+NOTE: If the child elements are in horizontal flow(flex-direction: row), justify content will change the orientation horizontally and vice versa.
+NOTE: this is applied on the parent element
+
+> object-fit: fill/contain/cover/*none/*scale-down
+used to specify how an image should be resized to fit its container
+*not commonly used
+More info in: https://www.w3schools.com/css/css3_object-fit.asp
+
